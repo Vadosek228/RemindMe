@@ -68,7 +68,7 @@ public class TabsFragmentAdapter extends FragmentPagerAdapter{
     private void init(Context context) {
         //инифиализируем мэп
         tabs = new HashMap<>();
-
+ 
         tabs.put(0, HistoryFragment.getInstance(context));// это значение vial
         tabs.put(1, IdeasFragment.getInstance(context));
         tabs.put(2, ExampleFragment.getInstance(context));
