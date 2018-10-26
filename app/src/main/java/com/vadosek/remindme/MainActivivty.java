@@ -15,6 +15,8 @@ public class MainActivivty extends AppCompatActivity{
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
+        //указываем, какую тему должен использовать
+        setTheme(R.style.AppDefault); //будет использоваться по умолчанию
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -35,7 +37,7 @@ public class MainActivivty extends AppCompatActivity{
         });
         //нужно исполькозать меню
         toolbar.inflateMenu(R.menu.menu);
-        getSupportActionBar().hide();//скрыть тулбар
+        //getSupportActionBar().hide();//скрыть тулбар
         //toolbar.setTitleTextColor(0xFFFFFFFF);//сделать надпись на тулбар белой
 
     }
