@@ -11,10 +11,9 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-import android.view.ViewParent;
 
 import com.example.vladislav.remindme.R;
-import com.vadosek.remindme.adapter.TabPagerFragmentAdapter;
+import com.vadosek.remindme.adapter.TabsFragmentAdapter;
 
 
 public class MainActivivty extends AppCompatActivity{
@@ -67,7 +66,7 @@ public class MainActivivty extends AppCompatActivity{
         viewPager = (ViewPager) findViewById(R.id.viewPager);
         tabLayout = (TabLayout) findViewById(R.id.tabLayout);
         //инициализируем адаптер
-        TabPagerFragmentAdapter adapter = new TabPagerFragmentAdapter(getSupportFragmentManager());
+        TabsFragmentAdapter adapter = new TabsFragmentAdapter(this, getSupportFragmentManager());
         //проставляем viePager adapter
         viewPager.setAdapter(adapter);
 

@@ -10,19 +10,18 @@ import android.view.ViewGroup;
 
 import com.example.vladislav.remindme.R;
 
-public class ExampleFragment extends AbstractTabFragment {
+public class BirthdayFragment extends AbstractTabFragment {
 
     //объявляем главный лэйаут
     private static final int LAYOUT = R.layout.fragment_example;
 
 
-    public static ExampleFragment getInstance(Context context){
+    public static BirthdayFragment getInstance(Context context){
         Bundle args = new Bundle(); //передача параметров и получение из других мест
-        ExampleFragment fragment = new ExampleFragment();
+        BirthdayFragment fragment = new BirthdayFragment();
         fragment.setArguments(args);
-
         fragment.setContext(context);
-        fragment.setTitle(context.getString(R.string.tab_item_todo));//достаем тайтл
+        fragment.setTitle(context.getString(R.string.tab_item_birthday));//достаем тайтл
 
         return fragment;
     }
@@ -34,9 +33,9 @@ public class ExampleFragment extends AbstractTabFragment {
         return view;
     }
 
+
     public void setContext(Context context) {
         this.context = context;
     }
-
 
 }
